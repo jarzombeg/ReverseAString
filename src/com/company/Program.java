@@ -1,11 +1,11 @@
 package com.company;
 
-import java.util.Scanner;
+import java.io.*;
 
 public class Program {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String text = scanner.nextLine();
+    public static void main(String[] args) throws IOException {
+BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+        String text = input.readLine();
         char[] arr = text.toCharArray();
         int l = arr.length-1;
         for (int i = l; i >= 0; i--) {
